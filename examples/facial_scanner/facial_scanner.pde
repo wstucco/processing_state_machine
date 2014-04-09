@@ -6,7 +6,7 @@ import processing.video.*;
   Instructions:  
 
   - press `s` to start the facial recognition
-  - if the system recognizes you, it greets u=you with a welcome back message
+  - if the system recognizes you, it greets you with a 'welcome back' message
   - if it doesn't, it calls the police!
 
 */
@@ -28,7 +28,7 @@ void setup() {
 }
 
 void draw() {
-  if(keyPressed && !sm.scanning()) { // discrd all the inputs while scanning
+  if(keyPressed && !sm.scanning()) { // discard all the inputs while scanning
     sm.input(key);
   }  
   
@@ -54,7 +54,7 @@ class StateMachine {
   }
   
   // I don't like the setter/getter pattern, unfortunately in java the best
-  // you can get is to remove the set/get prefic from the methods to somewhat
+  // you can get is to remove the set/get prefix from the methods to somewhat
   // mimic properties
   public Capture cam() {
     return this.cam;
