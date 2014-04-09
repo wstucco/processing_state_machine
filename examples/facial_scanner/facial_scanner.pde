@@ -2,9 +2,15 @@ import processing.video.*;
 
 /*
 
-  pause for a random amount of time and then log to the console a random number
+  Simulate the states of a facial recognition software
+  Instructions:  
+
+  - press `s` to start the facial recognition
+  - if the system recognizes you, it greets u=you with a welcome back message
+  - if it doesn't, it calls the police!
 
 */
+
 final int WIDTH = 640, 
           HEIGHT = 480;
 
@@ -146,6 +152,9 @@ class FailureState implements State {
   }
 }
 
+// the PauseState need to know which state to call next and how much time it has to wait
+// we pass them in as a paramtere to the constructor
+// if not, it waits for 5 seconds and then goes back to idle
 class PauseState implements State {
   private int start;
   private int timeout = 5000; // 5 sec
