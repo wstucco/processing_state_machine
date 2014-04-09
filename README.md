@@ -54,6 +54,7 @@ class InfiniteLoopState implements State {
 ```
 
 You can find more examples [here](https://github.com/wstucco/processing_state_machine/tree/master/examples)  
+- [`ping_pong`](https://github.com/wstucco/processing_state_machine/tree/master/examples/ping_pong) machines can play ping pong too!
 - [`dice_bingo`](https://github.com/wstucco/processing_state_machine/tree/master/examples/dice_bingo) rolls a dice, if the score is even, extracts a random bingo number [1..90]
 - [`facial_scanner`](https://github.com/wstucco/processing_state_machine/tree/master/examples/facial_scanner) emulate the states of a facial recognition system. It introduces new elements such as keeping the environment safe ancd clean in the warm body of the `StateMachine` class.
 
