@@ -70,6 +70,10 @@ class StateMachine {
   
 }
 
+// expanded the State interface to receive the StateMachine and the previous state
+// as parameters
+// StateMachine holds the environment, so we pass only what the state class needs and 
+// don't have to expose it through globl variables, keeping evrything cleran and safe
 interface State {
   public State nextState(State prevState, StateMachine sm);  
 }
