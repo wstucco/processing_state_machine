@@ -1,5 +1,3 @@
-import processing.video.*;
-
 /*
 
   a very interesting state machine that loops like there's no tomorrow

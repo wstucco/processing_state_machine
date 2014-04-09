@@ -1,5 +1,3 @@
-import processing.video.*;
-
 /*
 
   roll a dice, if the score is even, pause for a random amount of time
