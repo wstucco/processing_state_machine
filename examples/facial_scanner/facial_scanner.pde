@@ -157,7 +157,7 @@ class FailureState implements State {
 }
 
 // the PauseState need to know which state to call next and how much time it has to wait
-// we pass them in as a paramtere to the constructor
+// we pass them in as a paramters to the constructor
 // if not, it waits for 5 seconds and then goes back to idle
 class PauseState implements State {
   private int start;
